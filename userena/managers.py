@@ -173,7 +173,6 @@ class UserenaManager(UserManager):
         """
         if SHA1_RE.search(activation_key):
             userena = self.get(activation_key=activation_key)
-            print userena,userena.activation_key_expired()
             return userena.activation_key_expired()
         raise self.model.DoesNotExist
 

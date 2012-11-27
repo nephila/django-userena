@@ -184,7 +184,7 @@ def activate(request, activation_key,
         exp = UserenaSignup.objects.check_expired_activation(activation_key),activation_key
         if (not UserenaSignup.objects.check_expired_activation(activation_key) or not
             userena_settings.USERENA_ACTIVATION_RETRY):
-            print "qui";
+
             user = UserenaSignup.objects.activate_user(activation_key)
             if user:
                 # Sign the user in.
@@ -211,7 +211,6 @@ def activate(request, activation_key,
             return ExtraContextTemplateView.as_view(template_name=retry_template_name,
                                                 extra_context=extra_context)(request)
     except UserenaSignup.DoesNotExist,e:
-        print "eccc",e
         if not extra_context: extra_context = dict()
         return ExtraContextTemplateView.as_view(template_name=template_name,
                                                 extra_context=extra_context)(request)
@@ -248,7 +247,6 @@ def activate_retry(request, activation_key,
     try:
         if UserenaSignup.objects.check_expired_activation(activation_key):
             ax = UserenaSignup.objects.reissue_activation(activation_key)
-            print "res",ax
             if ax:
                 if not extra_context: extra_context = dict()
                 return ExtraContextTemplateView.as_view(template_name=template_name,
