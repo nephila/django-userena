@@ -133,7 +133,8 @@ class UserenaSignup(models.Model):
                                        context)
         subject_old = ''.join(subject_old.splitlines())
 
-        if userena_settings.USERENA_USE_PLAIN_TEMPLATE:
+        if (not userena_settings.USERENA_HTML_EMAIL or
+            userena_settings.USERENA_USE_PLAIN_TEMPLATE):
             message_old = render_to_string('userena/emails/confirmation_email_message_old.txt',
                                        context)
         else:
@@ -157,7 +158,8 @@ class UserenaSignup(models.Model):
                                        context)
         subject_new = ''.join(subject_new.splitlines())
 
-        if userena_settings.USERENA_USE_PLAIN_TEMPLATE:
+        if (not userena_settings.USERENA_HTML_EMAIL or
+            userena_settings.USERENA_USE_PLAIN_TEMPLATE):
             message_new = render_to_string('userena/emails/confirmation_email_message_new.txt',
                                        context)
         else:
@@ -216,7 +218,8 @@ class UserenaSignup(models.Model):
 
 
 
-        if userena_settings.USERENA_USE_PLAIN_TEMPLATE:
+        if (not userena_settings.USERENA_HTML_EMAIL or
+            userena_settings.USERENA_USE_PLAIN_TEMPLATE):
             message = render_to_string('userena/emails/activation_email_message.txt',
                                    context)
         else:
