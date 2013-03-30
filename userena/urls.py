@@ -18,7 +18,6 @@ urlpatterns = patterns('',
        userena_views.signout,
        name='userena_signout'),
 
-
     # Reset password
     url(r'^password/reset/$',
        auth_views.password_reset,
