@@ -236,11 +236,11 @@ msgstr "Il tuo indirizzo email è stato modificato."
 
 #: views.py:341
 msgid "You have been signed in."
-msgstr "Sei connesso."
+msgstr "Accesso effettuato."
 
 #: views.py:377
 msgid "You have been signed out."
-msgstr "Ora sei disconnesso."
+msgstr "Disconnessione effettuata."
 
 #: views.py:575
 msgid "Your profile has been updated."
@@ -658,11 +658,11 @@ msgstr "Uscito"
 
 #: templates/userena/signout.html:5
 msgid "You have been signed out"
-msgstr "Sei ora disconnesso"
+msgstr "Disconnessione effettuata"
 
 #: templates/userena/signout.html:8
 msgid "You have been signed out. Till we meet again."
-msgstr "Sei ora disconnesso."
+msgstr "Disconnessione effettuata."
 
 #: templates/userena/signup_complete.html:4
 msgid "Signup almost done!"
@@ -694,7 +694,7 @@ msgstr ""
 
 #: templates/userena/signup_complete.html:15
 msgid "You can now use the supplied credentials to signin."
-msgstr "Puoi ora utilizzare le credenziali per accedere."
+msgstr "Ora puoi utilizzare le credenziali per accedere."
 
 #: templates/userena/emails/activation_email_message.txt:2
 #: templates/userena/emails/confirmation_email_message_new.txt:2
@@ -813,45 +813,3 @@ msgstr "posizione"
 #: tests/profile.py:15 tests/profiles/models.py:27
 msgid "about me"
 msgstr "informazioni"
-
-#~ msgid "Hogrefe Accounts"
-#~ msgstr "Hogrefe Accounts"
-
-#~ msgid "Login"
-#~ msgstr "Login"
-
-#~ msgid "Consenso obbligatorio"
-#~ msgstr "Consenso obbligatorio"
-
-#~ msgid "Consenso trattamento"
-#~ msgstr "Consenso trattamento"
-
-#~ msgid "Ragione sociale"
-#~ msgstr "Ragione sociale"
-
-#~ msgid "P.IVA."
-#~ msgstr "P.IVA."
-
-#~ msgid "C.F."
-#~ msgstr "C.F."
-
-#~ msgid "Indirizzo 1"
-#~ msgstr "Indirizzo 1"
-
-#~ msgid "Indirizzo 2"
-#~ msgstr "Indirizzo 2"
-
-#~ msgid "Città"
-#~ msgstr "Città"
-
-#~ msgid "Provincia"
-#~ msgstr "Provincia"
-
-#~ msgid "Codice postale"
-#~ msgstr "Codice postale"
-
-#~ msgid "Spedizione ad altro indirizzo"
-#~ msgstr "Spedizione ad altro indirizzo"
-
-#~ msgid "Logout"
-#~ msgstr "Esci"
